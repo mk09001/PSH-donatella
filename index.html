@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Донателла | Программист и конный спортсмен</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Rubik', sans-serif;
+            background-color: #0f0f0f;
+            color: white;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #8b5cf6 0%, #10b981 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+        
+        .typewriter {
+            overflow: hidden;
+            border-right: .15em solid #8b5cf6;
+            white-space: nowrap;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #8b5cf6 }
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-black">
+    <header class="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="flex flex-col items-center text-center">
+            <div class="w-32 h-32 rounded-full bg-gradient-to-br from-purple-600 to-emerald-500 p-1 mb-6">
+                <div class="w-full h-full rounded-full bg-black flex items-center justify-center">
+                    <i class="fas fa-user text-5xl text-purple-500"></i>
+                </div>
+            </div>
+            <h1 class="text-4xl sm:text-5xl font-bold mb-2 text-white">
+                Привет, я <span class="gradient-text">Донателла!</span>
+            </h1>
+            <p class="text-xl sm:text-2xl typewriter mb-4">
+                Лучший 9-летний программист
+            </p>
+            <div class="flex space-x-4 mt-2">
+                <div class="w-12 h-12 rounded-full bg-black border-2 border-purple-500 flex items-center justify-center">
+                    <i class="fas fa-horse text-purple-500 text-xl"></i>
+                </div>
+                <div class="w-12 h-12 rounded-full bg-black border-2 border-emerald-500 flex items-center justify-center">
+                    <i class="fas fa-code text-emerald-500 text-xl"></i>
+                </div>
+                <div class="w-12 h-12 rounded-full bg-black border-2 border-purple-500 flex items-center justify-center">
+                    <i class="fas fa-gamepad text-purple-500 text-xl"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center gradient-text">Обо мне</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gray-900 rounded-xl p-6 shadow-lg card-hover border border-gray-800">
+                    <div class="text-purple-500 text-4xl mb-4">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Мой день рождения</h3>
+                    <p class="text-gray-300">Отмечаю 22 июля!</p>
+                    <p class="text-gray-400 mt-2">Скоро будет 10 лет 🎉</p>
+                </div>
+                
+                <div class="bg-gray-900 rounded-xl p-6 shadow-lg card-hover border border-gray-800">
+                    <div class="text-emerald-500 text-4xl mb-4">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Скорость печати</h3>
+                    <p class="text-gray-300">Тренируюсь в Stamina</p>
+                    <p class="text-gray-400 mt-2">Увеличиваю скорость каждый день ⌨️</p>
+                </div>
+                
+                <div class="bg-gray-900 rounded-xl p-6 shadow-lg card-hover border border-gray-800">
+                    <div class="text-purple-500 text-4xl mb-4">
+                        <i class="fas fa-horse-head"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Конный спорт</h3>
+                    <p class="text-gray-300">Занимаюсь с дедушкой</p>
+                    <p class="text-gray-400 mt-2">Веду конноблог и ухаживаю за своей лошадью 🐴</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center gradient-text">Мои Навыки</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 3D моделирование -->
+                <div class="bg-gray-900 rounded-xl p-6 shadow-lg card-hover border border-gray-800">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-black flex items-center justify-center mr-4">
+                            <i class="fas fa-cube text-purple-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">3D Моделирование</h3>
+                    </div>
+                    <p class="text-gray-300">Строю 3D-модели в Tinkercad. Создаю сложные конструкции и изучаю основы 3D-дизайна.</p>
+                    <div class="mt-4 flex justify-between">
+                        <span class="text-xs px-3 py-1 bg-purple-900 rounded-full text-purple-300">Tinkercad</span>
+                        <span class="text-xs px-3 py-1 bg-gray-800 rounded-full text-gray-300">3D Design</span>
+                    </div>
+                </div>
+                
+                <!-- Виртуальная реальность -->
+                <div class="bg-gray-900 rounded-xl p-6 shadow-lg card-hover border border-gray-800">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-black flex items-center justify-center mr-4">
+                            <i class="fas fa-vr-cardboard text-emerald-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">VR Проекты</h3>
+                    </div>
+                    <p class="text-gray-300">Работаю в CoSpaces, создаю миры виртуальной реальности. Развиваю пространственное мышление.</p>
+                    <div class="mt-4 flex justify-between">
+                        <span class="text-xs px-3 py-1 bg-emerald-900 rounded-full text-emerald-300">CoSpaces</span>
+                        <span class="text-xs px-3 py-1 bg-gray-800 rounded-full text-gray-300">VR</span>
+                    </div>
+                </div>
+                
+                <!-- Kodu Game Lab -->
+                <div class="bg-gray-900 rounded-xl p-6 shadow-lg card-hover border border-gray-800">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-black flex items-center justify-center mr-4">
+                            <i class="fas fa-gamepad text-purple-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Создание игр</h3>
+                    </div>
+                    <p class="text-gray-300">Разрабатываю игры в Kodu Game Lab. Придумываю механики и дизайн уровней.</p>
+                    <div class="mt-4 flex justify-between">
+                        <span class="text-xs px-3 py-1 bg-purple-900 rounded-full text-purple-300">Kodu</span>
+                        <span class="text-xs px-3 py-1 bg-gray-800 rounded-full text-gray-300">Game Dev</span>
+                    </div>
+                </div>
+                
+                <!-- Construct 3 -->
+                <div class="bg-gray-900 rounded-xl p-6 shadow-lg card-hover border border-gray-800">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-black flex items-center justify-center mr-4">
+                            <i class="fas fa-dice-d20 text-emerald-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">2D Игры</h3>
+                    </div>
+                    <p class="text-gray-300">Делаю серьёзные 2D-игры в Construct 3. Изучаю игровую логику и физику.</p>
+                    <div class="mt-4 flex justify-between">
+                        <span class="text-xs px-3 py-1 bg-emerald-900 rounded-full text-emerald-300">Construct 3</span>
+                        <span class="text-xs px-3 py-1 bg-gray-800 rounded-full text-gray-300">2D Games</span>
+                    </div>
+                </div>
+                
+                <!-- Animaker -->
+                <div class="bg-gray-900 rounded-xl p-6 shadow-lg card-hover border border-gray-800">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-black flex items-center justify-center mr-4">
+                            <i class="fas fa-film text-purple-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Анимация</h3>
+                    </div>
+                    <p class="text-gray-300">Создаю анимационные видео в Animaker. Развиваю навыки сторителлинга и монтажа.</p>
+                    <div class="mt-4 flex justify-between">
+                        <span class="text-xs px-3 py-1 bg-purple-900 rounded-full text-purple-300">Animaker</span>
+                        <span class="text-xs px-3 py-1 bg-gray-800 rounded-full text-gray-300">Animation</span>
+                    </div>
+                </div>
+                
+                <!-- Блог -->
+                <div class="bg-gray-900 rounded-xl p-6 shadow-lg card-hover border border-gray-800">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-black flex items-center justify-center mr-4">
+                            <i class="fas fa-blog text-emerald-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Конный блог</h3>
+                    </div>
+                    <p class="text-gray-300">Пишу о конном спорте и уходе за лошадьми. Делимся с дедушкой опытом.</p>
+                    <div class="mt-4 flex justify-between">
+                        <span class="text-xs px-3 py-1 bg-emerald-900 rounded-full text-emerald-300">Blogging</span>
+                        <span class="text-xs px-3 py-1 bg-gray-800 rounded-full text-gray-300">Horses</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center gradient-text">Мои Проекты</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gradient-to-br from-purple-900 to-gray-900 rounded-xl p-6 shadow-lg card-hover border border-purple-800">
+                    <div class="flex items-start mb-4">
+                        <div class="w-14 h-14 rounded-lg bg-black flex items-center justify-center mr-4">
+                            <i class="fas fa-gamepad text-purple-500 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Игры Kodu</h3>
+                            <p class="text-purple-300">Мои лучшие проекты</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">Я создала несколько крутых игр с разными механиками - гонки, платформеры, квесты. В них есть персонажи и интересные миссии.</p>
+                    <div class="flex space-x-2">
+                        <span class="text-xs px-3 py-1 bg-black rounded-full text-purple-300">Game Design</span>
+                        <span class="text-xs px-3 py-1 bg-black rounded-full text-purple-300">Logic</span>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-emerald-900 to-gray-900 rounded-xl p-6 shadow-lg card-hover border border-emerald-800">
+                    <div class="flex items-start mb-4">
+                        <div class="w-14 h-14 rounded-lg bg-black flex items-center justify-center mr-4">
+                            <i class="fas fa-horse text-emerald-500 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Конный блог</h3>
+                            <p class="text-emerald-300">Советы и рассказы</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">Я делюсь опытом ухода за лошадьми, рассказываю о наших поездках с дедушкой и даю полезные советы начинающим всадникам.</p>
+                    <div class="flex space-x-2">
+                        <span class="text-xs px-3 py-1 bg-black rounded-full text-emerald-300">Horses</span>
+                        <span class="text-xs px-3 py-1 bg-black rounded-full text-emerald-300">Blog</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <div class="bg-gray-900 rounded-xl p-8 shadow-lg border border-gray-800">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold mb-4 gradient-text">Моя Дорожная Карта</h2>
+                    <p class="text-gray-400 mb-8">Что я планирую изучить в будущем</p>
+                </div>
+                
+                <div class="relative">
+                    <!-- Линия времени -->
+                    <div class="hidden md:block absolute left-1/2 h-full w-1 bg-gradient-to-b from-purple-500 to-emerald-500 transform -translate-x-1/2"></div>
+                    
+                    <!-- Пункты дорожной карты -->
+                    <div class="grid gap-8 md:grid-cols-2 md:gap-0">
+                        <!-- Слева -->
+                        <div class="md:pr-16 relative md:text-right">
+                            <div class="absolute top-0 right-0 md:-right-2 w-4 h-4 bg-purple-500 rounded-full mt-1.5"></div>
+                            <h3 class="text-xl font-bold text-purple-400 mb-2">Roblox Studio</h3>
+                            <p class="text-gray-300">Планирую начать создавать свои миры и игры в Roblox, чтобы делиться ими с друзьями.</p>
+                        </div>
+                        
+                        <div class="md:pr-16 relative md:text-right md:pt-16">
+                            <div class="absolute top-0 right-0 md:-right-2 w-4 h-4 bg-emerald-500 rounded-full mt-1.5"></div>
+                            <div class="md:mt-20"></div>
+                            <h3 class="text-xl font-bold text-emerald-400 mb-2">Unity</h3>
+                            <p class="text-gray-300">Хочу освоить более продвинутую платформу для создания 3D игр и виртуальных миров.</p>
+                        </div>
+                        
+                        <!-- Справа -->
+                        <div class="md:pl-16 relative md:col-start-2 md:row-start-1 md:mt-16">
+                            <div class="absolute top-0 left-0 md:-left-2 w-4 h-4 bg-purple-500 rounded-full mt-1.5"></div>
+                            <div class="md:mt-12"></div>
+                            <h3 class="text-xl font-bold text-purple-400 mb-2">Blender</h3>
+                            <p class="text-gray-300">Мечтаю научиться профессионально моделировать в Blender, чтобы создавать более сложные 3D объекты.</p>
+                        </div>
+                        
+                        <div class="md:pl-16 relative md:col-start-2 md:row-start-2 md:mt-8">
+                            <div class="absolute top-0 left-0 md:-left-2 w-4 h-4 bg-emerald-500 rounded-full mt-1.5"></div>
+                            <div class="md:mt-20"></div>
+                            <h3 class="text-xl font-bold text-emerald-400 mb-2">JavaScript</h3>
+                            <p class="text-gray-300">Начну изучать JavaScript, чтобы создавать свои веб-сайты и интерактивные проекты.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col items-center">
+                <h2 class="text-2xl font-bold mb-6 gradient-text">Давайте дружить!</h2>
+                <p class="text-gray-400 text-center max-w-md mb-8">
+                    Если у тебя есть вопросы или хочешь вместе разрабатывать проекты, напиши мне!
+                </p>
+                <div class="flex space-x-4 mb-8">
+                    <a href="#" class="w-12 h-12 rounded-full bg-black border-2 border-purple-500 flex items-center justify-center hover:bg-purple-900 transition">
+                        <i class="fab fa-discord text-purple-500 text-xl"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 rounded-full bg-black border-2 border-emerald-500 flex items-center justify-center hover:bg-emerald-900 transition">
+                        <i class="fas fa-envelope text-emerald-500 text-xl"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 rounded-full bg-black border-2 border-purple-500 flex items-center justify-center hover:bg-purple-900 transition">
+                        <i class="fab fa-youtube text-purple-500 text-xl"></i>
+                    </a>
+                </div>
+                <p class="text-gray-600 text-sm">
+                    © 2023 Донателла. Лучший 9-летний программист 🚀
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Анимация при загрузке
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card-hover');
+            
+            setTimeout(() => {
+                cards.forEach((card, index) => {
+                    setTimeout(() => {
+                        card.classList.add('animate-fade-in');
+                    }, index * 100);
+                });
+            }, 500);
+            
+            // Меняем цвета градиента в заголовке
+            const gradientTexts = document.querySelectorAll('.gradient-text');
+            let colors = [
+                'from-purple-600 to-emerald-500',
+                'from-blue-500 to-purple-600',
+                'from-emerald-500 to-blue-500'
+            ];
+            let currentIndex = 0;
+            
+            setInterval(() => {
+                gradientTexts.forEach(text => {
+                    text.classList.remove(...colors);
+                    text.classList.add(colors[currentIndex].split(' ')[0], colors[currentIndex].split(' ')[2]);
+                });
+                
+                currentIndex = (currentIndex + 1) % colors.length;
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
